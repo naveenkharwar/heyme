@@ -764,7 +764,7 @@ a:active {
     position: relative;
     display: inline-block;
     margin-right: 20px;
-    /* text-align: center; */
+    white-space: nowrap;
 }
 
 .main-navigation li ul {
@@ -796,18 +796,14 @@ a:active {
     border-bottom: 1px solid red;
 }
 
+ul .sub-menu{
+   display: inline-grid!important;
+}
+
 .main-navigation a {
     display: block;
     text-decoration: none;
     color: #fff;
-}
-
-/* .sub-menu{
-    width: 200px;
-} */
-
-.sub-menu li {
-    width: 130px
 }
 
 /* Small menu. */

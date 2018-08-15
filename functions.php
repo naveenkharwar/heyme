@@ -195,6 +195,15 @@ function hey_me_external_style(){
 add_action( 'wp_enqueue_scripts', 'hey_me_external_style' );
 
 /**
+ * FontAwesome.
+ */
+
+function hey_me_fa_style(){
+	wp_enqueue_style( 'hey_me_fa', get_template_directory_uri() . '/fontawesome/all.css');
+}
+add_action( 'wp_enqueue_scripts', 'hey_me_fa_style' );
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';

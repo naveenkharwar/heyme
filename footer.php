@@ -16,42 +16,42 @@
 	<footer id="colophon" class="site-footer">
 		<div class="row widgets-footer">
 		<div class="col-sm">
-		<?php dynamic_sidebar( 'footer-1' ); ?>
+		<?php dynamic_sidebar('footer-1');?>
 		</div>
 		<div class="col-sm">
-		<?php dynamic_sidebar( 'footer-2' ); ?>
+		<?php dynamic_sidebar('footer-2');?>
 		</div>
 		<div class="col-sm">
-		<?php dynamic_sidebar( 'footer-3' ); ?>
+		<?php dynamic_sidebar('footer-3');?>
 		</div>
 		<div class="col-sm">
-		<?php dynamic_sidebar( 'footer-4' ); ?>
+		<?php dynamic_sidebar('footer-4');?>
 		</div>
 		</div>
 		<div class="site-info">
 				<?php
-					/**
-					 * Fires before the hey_me footer text for footer customization.
-					 *
-					 * @since Twenty Sixteen 1.0
-					 */
-					do_action( 'hey_me_credits' );
-				?>
-				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
+/**
+ * Fires before the hey_me footer text for footer customization.
+ *
+ * @since Twenty Sixteen 1.0
+ */
+do_action('hey_me_credits');
+?>
+				<span class="site-title"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name');?></a></span>
 				<?php
-				if ( function_exists( 'the_privacy_policy_link' ) ) {
-					the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
-				}
-				?>
-				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hey_me' ) ); ?>" class="imprint">
-					<?php printf( __( 'Proudly powered by %s', 'hey_me' ), 'WordPress' ); ?>
+if (function_exists('the_privacy_policy_link')) {
+    the_privacy_policy_link('', '<span role="separator" aria-hidden="true"></span>');
+}
+?>
+				<a href="<?php echo esc_url(__('https://wordpress.org/', 'hey_me')); ?>" class="imprint">
+					<?php printf(__('Proudly powered by %s', 'hey_me'), 'WordPress');?>
 				</a>
 			</div><!-- .site-info -->
 
 	</footer><!-- #colophon -->
 
 
-<?php wp_footer(); ?>
+<?php wp_footer();?>
 
 </body>
 </html>
