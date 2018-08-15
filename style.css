@@ -1,8 +1,8 @@
 /*!
 Theme Name: Hey Me
-Theme URI: http://underscores.me/
+Theme URI: https://naveenkharwar.com/work/heyme
 Author: Naveen Kharwar
-Author URI: http://underscores.me/
+Author URI: https://naveenkharwar.com/
 Description: A Simple WordPress Theme
 Version: 1.0.0
 License: GNU General Public License v2 or later
@@ -12,9 +12,6 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
-
-Hey Me is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
-Underscores is distributed under the terms of the GNU GPL v2 or later.
 
 Normalizing styles have been helped along thanks to the fine work of
 Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
@@ -1251,7 +1248,7 @@ footer .widget a, .site-info a{
 }
 
 .site-info{
-    padding: 50px;
+    padding: 10px;
     text-align: center;
 }
 
@@ -1261,10 +1258,16 @@ footer .widget a, .site-info a{
 
 }
 
-.site-info a:hover{
-
+footer .site-title{
+    font-size: 4rem;
+    font-weight: 900;
+    display: block;
+    padding-bottom: 10px;
 }
 
+footer .site-title a{
+    border-bottom: 2px solid #000;  
+}
 /*--------------------------------------------------------------
 # Infinite scroll
 --------------------------------------------------------------*/

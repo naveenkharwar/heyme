@@ -29,18 +29,24 @@
 		</div>
 		</div>
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hey_me' ) ); ?>">
 				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'hey_me' ), 'WordPress' );
+					/**
+					 * Fires before the hey_me footer text for footer customization.
+					 *
+					 * @since Twenty Sixteen 1.0
+					 */
+					do_action( 'hey_me_credits' );
 				?>
-			</a>
-			<span class="sep"> | </span>
+				<span class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span>
 				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'hey_me' ), 'Hey Me', '<a href="http://underscores.me/">Naveen Kharwar</a>' );
+				if ( function_exists( 'the_privacy_policy_link' ) ) {
+					the_privacy_policy_link( '', '<span role="separator" aria-hidden="true"></span>' );
+				}
 				?>
-		</div><!-- .site-info -->
+				<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'hey_me' ) ); ?>" class="imprint">
+					<?php printf( __( 'Proudly powered by %s', 'hey_me' ), 'WordPress' ); ?>
+				</a>
+			</div><!-- .site-info -->
 
 	</footer><!-- #colophon -->
 
