@@ -1,10 +1,14 @@
-# Project Title
+# Hey Me 
 
-One Paragraph of project description goes here
+A clean and simple to use WordPress Theme.
 
-## Getting Started
+## Installation
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+1. In your admin panel, go to Appearance -> Themes and click the 'Add New' button.
+2. Type in Twenty Seventeen in the search form and press the 'Enter' key on your keyboard.
+3. Click on the 'Activate' button to use your new theme right away.
+4. Go to https://codex.wordpress.org/Twenty_Seventeen for a guide on how to customize this theme.
+5. Navigate to Appearance > Customize in your admin panel and customize to taste.
 
 ### Prerequisites
 
