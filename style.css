@@ -800,6 +800,10 @@ ul .sub-menu{
    display: inline-grid!important;
 }
 
+ul .children{
+    display: inline-grid!important;
+ }
+
 .main-navigation a {
     display: block;
     text-decoration: none;
